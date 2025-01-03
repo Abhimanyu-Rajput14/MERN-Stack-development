@@ -1,0 +1,47 @@
+#p1{
+    border: 2px solid red;
+    padding: 100px 50px;
+    margin: 50px 100px; 
+    text-align:end;
+    text-transform: capitalize;
+}
+#p2{
+    border: 2px solid rgb(15, 149, 100);
+    padding: 100px 50px;
+    margin: 100px 50px;  
+    text-align:start;
+    text-transform: uppercase;
+}
+/* div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} */
+@import url('https://fonts.googleapis.com/css2?family=Sevillana&display=swap');
+
+p {
+    font-family: "Sevillana", cursive;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  /* css-Units
+  Absolute{px,in,cm,mm}
+  Relative{vh/vw,rem,em,%} */
+  
+  *{
+    margin: 0;
+    padding: 0;
+  }
+  .container{
+    /* border:2px solid blue; */
+    height: 50vh;
+    width: 100vw;
+    background-color: yellow;
+  }
+
+  .child{
+    height: 50vh;
+    width: 100vw;
+    background: #9d0d0d;
+  }

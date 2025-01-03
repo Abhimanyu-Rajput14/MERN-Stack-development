@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=\, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            border: 2px solid black;
+            padding: 4rem;
+            font-size: 2rem;
+        }
+
+        #parent {
+            background: yellow;
+        }
+
+        #child {
+            background: rgb(187, 7, 7);
+        }
+
+        #grand-child {
+            background: rgb(3, 84, 77);
+        }
+    </style>
+</head>
+
+<body>
+    <div id="parent">
+        parent
+        <div id="child">
+            child
+            <div id="grand-child">
+                grand-child
+            </div>
+        </div>
+    </div>
+
+
+    <script src="./script.js"></script>
+</body>
+
+</html>

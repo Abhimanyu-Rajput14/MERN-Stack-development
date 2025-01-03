@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            width: 250px;
+            height: 250px;
+            background-color: rgb(106, 42, 165);
+            animation: LtoR 2s ease-in-out infinite alternate forwards;
+        }
+        @keyframes LtoR{
+            0%{
+                transform: translate(0);
+            }
+            50%{
+                background-color: #b31d1d;
+            }
+            100%{
+                transform: translate(900px);
+                background-color: #77c91b;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container"></div>
+</body>
+</html>

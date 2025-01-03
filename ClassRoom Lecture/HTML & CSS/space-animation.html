@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Space</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .container{
+            width: 100vw;
+            height: 100vh;
+            background-image: url('./Images/Space.png');
+            background-color:rgb(4, 44, 44);
+            /* background-position-x: ; */
+            /* background-repeat: no-repeat; */
+            position: relative;
+            animation: bgMove 5s ease-in-out forwards;
+        }
+
+        @keyframes bgMove{
+            100%{
+                background-position-x: -10000px;
+            }
+        }
+        .rocket{
+            width: 250px;
+            height: 250px;
+            transform: rotateZ(45deg);
+            position: absolute;
+            bottom: 150px;
+            left: 600px;
+            animation: rocketUpAndDown 2s ease-in-out infinite,
+                        takePosition 2s ease-in-out 9s forwards,
+                        rocketLaunch 2s ease-in-out 11s forwards;
+        }
+        .rocket img,.cody img{
+            width: 100%;
+        }
+        @keyframes rocketUpAndDown{
+            50%{
+                bottom: 350px;
+            }
+            100%{
+                bottom: 150px;
+            }
+        }
+        .cody{
+            width: 80px;
+            height: 80px;
+            position: absolute;
+            bottom: 250px;
+            left: -100px;
+            animation:codyUpAndDown 2s ease-in-out infinite, 
+                      codyMoveForward 2s linear 5s forwards,
+                      codyInRocket 2s linear 7s forwards;
+        }
+        
+        @keyframes codyUpAndDown{
+            50%{
+                bottom: 450px;
+            }
+            100%{
+                bottom: 250px;
+            }
+        }
+
+        @keyframes codyMoveForward{
+            100%{
+                left: 520px;
+            }
+        }
+        @keyframes codyInRocket{
+            100%{
+                left: 800px;
+                transform: scale(0);
+            }
+        }
+        @keyframes takePosition{
+            100%{
+                transform: rotateZ(-45deg);
+            }
+        }
+        @keyframes rocketLaunch{
+            100%{
+                bottom:2500px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="rocket">
+            <img src="./Images/rocket.png" alt="">
+        </div>
+        <div class="cody">
+            <img src="./Images/Cody.png" alt="">
+        </div>
+    </div>
+</body>
+</html>

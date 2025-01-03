@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .parent{
+            background-color: rgb(184, 186, 24);
+            border: 2px solid black;
+            height:60vh;
+            display:flex;
+            flex-direction: column;
+            column-gap: 4px;
+            flex-wrap: wrap;
+            /* align-items: space-evenly; */
+            justify-content: space-between;
+            align-items:flex-end;
+            
+            
+            
+        }
+        .child{
+            height: 15%;
+            width: 20%;
+            background: rgb(17, 105, 155);
+            border: 1px solid rgb(156, 15, 39);
+            
+            /* box-sizing: border-box; */
+        }
+        .child-2,.child-4{
+            display:flex;
+            align-self:flex-start;
+            flex-grow: 4;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <div class="child child-1">1</div>
+        <div class="child child-2">2</div>
+        <div class="child child-3">3</div>
+        <div class="child child-4">4</div>
+        <div class="child child-5">5</div>
+</body>
+</html>

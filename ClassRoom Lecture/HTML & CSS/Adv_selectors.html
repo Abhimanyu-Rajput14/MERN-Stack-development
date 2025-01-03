@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adv Selectors</title>
+    <style>
+        a:hover{
+            color: brown;
+        }
+        a:active{
+            color: rgba(153, 50, 204, 0.397);
+        }
+        div{
+            padding: 10PX;
+            border: 2px solid black;
+        
+        }
+        div:hover{
+            background:purple;
+        }
+        ul li:nth-child(2n+2){
+            color: rgb(17, 134, 158);
+            background: #d74b0f;
+        }
+        ul li:nth-child(2n+1){
+            background: #12ea16;
+        }
+        input:focus{
+            background-color: aqua;
+        }
+        p::first-letter{
+            font-size:x-large;
+        }
+        li::after{
+            content:'🍅'; 
+            /* emoki-shortcut: window+dot(.) */
+        }
+
+        p,h1{
+            border:4px solid rgb(27, 35, 3);
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1><a href="https://www.google.com/">Google</a></h1>
+    <div>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid consequuntur cupiditate quam laborum reiciendis, unde error? Necessitatibus praesentium nesciunt magni.
+    </div><br>
+    <input type="text">
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore, eveniet.</p>
+    <ul>
+        <li>Apple</li>
+        <li>Bada Apple</li>
+        <li>Chota Apple</li>
+        <li>Apple</li>
+        <li>Bada Apple</li>
+        <li>Chota Apple</li>
+        <li>Apple</li>
+        <li>Bada Apple</li>
+        <li>Chota Apple</li>
+    </ul>
+</body>
+</html>

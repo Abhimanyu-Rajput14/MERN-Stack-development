@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            width: 650px;
+            height: 400px;
+            margin: 90px auto;
+            border: 2px solid rgb(6, 149, 89);
+            transition-duration: 2.5s;
+            position: relative;
+            transform-style: preserve-3d;
+        }
+
+        .img,.content{
+            height: 100%;
+            width: 100%;
+            position: absolute;
+        }
+        .img{
+            background-image: url(./akshay.png);
+            background-size: cover;
+            backface-visibility: hidden;
+        }
+        .content{
+            transform: rotateY(180deg);
+            background: #768a1382;
+            backface-visibility: hidden;
+        }
+        p{
+            padding: 10px;
+        }
+        .container:hover{
+            transform:rotateY(180deg);
+            /* transform:rotateZ(45deg);
+            transform:rotateX(45deg);
+            transform: scale(1.4) skew(20deg,30deg); */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="img"></div>
+        <div class="content">
+            <p>Akshay Hari Om Bhatia (born Rajiv Hari Om Bhatia; 9 September 1967), known professionally as Akshay Kumar, is an Indian actor and film producer working in Hindi cinema. Referred to in the media as "Khiladi Kumar",through his career spanning over 30 years, Kumar has appeared in over 100 films and has won several awards, including one National Film Award and two Filmfare Awards.</p>
+        </div>
+        
+    </div>
+</body>
+</html>
